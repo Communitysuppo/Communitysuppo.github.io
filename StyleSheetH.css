@@ -1,0 +1,318 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+
+:root {
+    --color: #92D050;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+html {
+    font-size: 70%;
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+
+}
+.landing p a {
+    text-decoration: none;
+    color: #fff;
+    background: #00B0F0;
+    border: solid;
+    border-radius: 1rem;
+}
+    .landing p a:hover{
+        color:#000;
+       
+    }
+
+    .heading {
+        margin: auto;
+        padding-top: 8rem;
+        display: inline-block;
+        font-size: 6.5rem;
+        color: #000;
+        position: relative;
+        letter-spacing: .2rem;
+    }
+
+    .home .fa-cog{
+        position: absolute;
+        font-size: 30rem;
+        opacity: .15;
+        color: #000;
+        animation: rotate 10s linear infinite;
+    }
+    .home .nut1{
+        top: 10%; left: -15rem;
+    }
+    .home .nut2{
+        bottom:23%; right: -13rem;
+        animation-direction: reverse;
+    }
+    @keyframes rotate{
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+.home .wave {
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    height: 11rem;
+    width: 100%;
+    background: url(C:/JTAwebTech/images/wave.png);
+    background-size: 100rem 11rem;
+    background-repeat: repeat-x;
+    animation: waves 10s linear infinite;
+}
+.home .wave2{
+    animation-direction: reverse;
+    opacity: .2;             
+}
+.home .wave3{
+    animation-duration:4s;
+    opacity: .5;
+}
+@keyframes waves{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 100rem;
+    }
+}
+.header_btn {
+   
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    background: var(--color);
+    color: #fff;
+    cursor: pointer;
+    height: 3.5rem;
+    width: 15rem;
+    font-size: 1.7rem;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+}
+.btn {
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    background: var(--color);
+    color: #fff;
+    cursor: pointer;
+    height: 3.5rem;
+    width: 15rem;
+    font-size: 1.7rem;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+}
+    .btn:hover{
+        letter-spacing: .1rem;
+        opacity: .8;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem 2rem; 
+        position: relative;
+        top: 0; left: 0;
+        z-index: 100;
+        background: grey;
+    }
+    .header .navbar ul{
+        list-style-type: none;
+    }
+        .header .navbar ul li {
+            position: relative;
+            float: left;
+            
+            
+        }
+    .header .navbar ul li a {
+           font-size: 2rem;
+            color: #fff;
+            padding: 10px;
+            
+    }
+    .header .navbar ul li ul{
+        position: absolute;
+        left:0;
+        width: 200px;
+        background:grey;
+        display: none;
+
+    }
+ .header .navbar ul li ul li{
+     width: 100%;
+     border-top: 1px solid rgba(0,0,0,.1);
+ }
+
+.header .navbar ul li a:hover {
+        color: var(--color);
+    }
+    .header .fa-bars{
+        color:#000;
+        cursor: pointer; 
+        font-size: 6rem;
+        display: none;
+    }
+.header .navbar ul li:hover > ul{
+    display: initial
+}
+.home {
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#FFA401, var(--color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+    overflow: hidden !important;
+}
+.home .banner{
+    color: #fff;
+    font-size: 5rem;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0,.3);
+}
+.home .slogan{
+    color:#eee;
+    font-size:2.5rem;
+    font-weight:300;
+}
+
+.community {
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.commuinty .row .content {
+    text-align: left;
+}
+.community .row .content h3 {
+    font-size: 3rem;
+    color: var(--color);
+}
+.community .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 4rem;
+}
+.community .row .image video {
+    width: 50vw;
+    height: 50vh;
+}
+    .community .row .content p .btn {
+        min-height: 50vh;
+        width: 50vw;
+        font-size: 1.5rem;
+        color: #333;
+        margin: auto;
+    }
+.community::before, .community::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    opacity: .2;
+    border-radius: 50%;
+}
+
+.community::before {
+    height: 50rem;
+    width: 50rem;
+    background: #FFA401;
+    bottom: -8rem;
+    left: -8rem;
+}
+
+.community::after {
+    height: 60rem;
+    width: 60rem;
+    background: var(--color);
+    top: -8rem;
+    right: -8rem;
+}
+
+    .community .part_btn {
+        outline: none;
+        border: none;
+        border-radius: 5rem;
+        background: none;
+        color: #000;
+        cursor: pointer;
+        height: auto;
+        width: auto;
+        font-size: 1.5rem;
+        box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+    }
+
+.community .part_btn:hover {
+    box-shadow: inset 150px 0 10px 9px var(--color);
+}
+.community ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.community ul li {
+    margin: auto;
+}
+.community ul li a {
+    font-size: 2rem;
+    color: #000;
+}
+
+.h_faq {
+    min-height: 100vh;
+    width: 100%;
+    background: #f1f1f1f1;
+}
+.h_faq p {
+   justify-content: center;
+}
+.login_terms{
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    font-size: 1.5rem;
+}
+    .login_terms pre {
+        justify-content: center; 
+        width: 80%;
+    }
+
+    @media (max-width:991px) {
+        html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+.footer{
+    position: sticky;
+    top: 100%;
+
+}
