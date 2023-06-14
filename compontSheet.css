@@ -1,0 +1,203 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+
+:root {
+    --organge: #FFA401; 
+    --green: #92D050 ;
+    --blue: #00B0F0; 
+    --white: #f1f1f1;
+    --border:.2rem solid var(--green);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+*{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline:none; border:none;
+    text-decoration: none;
+    
+}
+.navbar {
+
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem;
+    
+}
+.navbar ul{
+    list-style-type: none;
+}
+
+.navbar ul li {
+    position: relative;
+    
+}
+
+.navbar ul li a {
+    align-items: center;
+    font-size: 2rem;
+    color: black;
+    padding: 10px;
+    float: left;
+    }
+.navbar ul li a:hover {
+    color: var(--blue);
+}
+
+*::selection{
+    background-color: var(--green);
+    color:var(--white);
+}
+*::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+*::-webkit-scrollbar-thumb{
+    background-color:var(--green);
+}
+
+body{
+    background-color: var(--white);
+}
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+section{
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin:0 auto;
+}
+.btn,
+.delete-btn,
+.option-btn{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    color:var(--white);
+    font-size: 2rem;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+}
+
+.error-msg {
+    position: sticky;
+    top: 1px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: red;
+    padding: 1rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    z-index: 10000;
+}
+.message span{
+    font-size: 2rem;
+    color:#fff;
+}
+.message i{
+    cursor: pointer;
+    color:var(--white);
+
+}
+.message i:hover{
+    color: var(--blue);
+
+}
+    .btn {
+        background-color: var(--green);
+    }
+.delete-btn{
+    background-color:red;
+}
+.option-btn{
+    background-color: var(--organge);
+}
+
+.btn:hover,
+.delete-btn:hover,
+.option-btn:hover {
+    background-color:#000;
+
+}
+
+    .form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container form {
+    width: 50rem;
+    background-color: var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    text-align: center;
+    padding: 2rem;
+}
+.form-container form h3 {
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    
+}
+.form-container form .box{
+    width: 100%;
+    margin: 1rem 0; 
+    border-radius: .5rem;
+    border:var(--border);
+    padding: 1.2rem 1.4rem;
+    font-size: 1.8rem;
+    color:var(--blue);
+    background-color:var(--white);
+
+}
+.form-container form p{
+    margin-top: 1.5rem;
+    font-size: 2.2rem;
+    color: black;
+}
+.form-container form p a{
+    color:var(--blue);
+}
+.form-container form p a:hover{
+    text-decoration: underline #FFA401;
+    color: black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 60%;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 55%;
+    }
+}
